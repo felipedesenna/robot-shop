@@ -30,7 +30,8 @@
             "inlineStyleLanguage": "scss",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              "src/mockServiceWorker.js"
             ],
             "styles": [
               "src/styles.scss"
@@ -71,7 +72,8 @@
               "browserTarget": "robot-shop:build:production"
             },
             "development": {
-              "browserTarget": "robot-shop:build:development"
+              "browserTarget": "robot-shop:build:development",
+              "proxyConfig": "src/proxy.conf.json"
             }
           },
           "defaultConfiguration": "development"
